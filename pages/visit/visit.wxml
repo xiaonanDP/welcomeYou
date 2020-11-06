@@ -1,0 +1,27 @@
+<!--pages/visit/visit.wxml-->
+<text>pages/visit/visit.wxml</text>
+<block wx:if="">
+
+
+</block>
+<block wx:else>
+  <form bindsubmit="search_cancel" wx:if="{{searchView}}" report-submit="true">
+       <view class="search-box">
+
+        <view class="input-box">
+          <view style="font-size: 0">
+            <image class="search-icon" src="/images/icon-search.png"></image>
+          </view>
+          <view style="width: 100%">
+            <input focus='{{searchView}}' bindblur="inputBlur" name='search_value' bindconfirm="inputConfirm" bindfocus="inputFocus" class="search-input" confirmType="search" style="width: 100%"></input>
+          </view>
+        </view>
+
+        <view>
+          <button type="primary" formType="submit" style='' class="search-cancel">预约参观</button>
+        </view>
+
+      </view> 
+    </form> 
+
+</block>
